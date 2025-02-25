@@ -12,7 +12,8 @@ final router = GoRouter(
         routes: <RouteBase>[
           GoRoute(
             path: '/input',
-            builder: (context, state) => const InputPage(),
+            builder: (context, state) =>
+                InputPage(data: DogData(dogName: '', dogAge: 0)),
           ),
         ]),
   ],
